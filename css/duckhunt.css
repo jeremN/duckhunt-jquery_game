@@ -1,0 +1,114 @@
+
+@font-face {
+    font-family: "Duck Hunt";
+    src: url("../duckhunt.ttf");
+}
+body{
+	width: 100%;
+	height: 100%;
+	cursor: crosshair;
+	background-color: #2c3e50;
+	color: #ecf0f1;
+	/*font-family: 'Annie Use Your Telescope', cursive;*/
+	  font-family: "Duck Hunt";
+	}
+#wrapper{
+	position: relative;
+	width: 56.25em;
+	height: 37.5em;
+	margin: 6.25em auto;
+	overflow: hidden;
+	background-color: black;
+}
+#ammo, #other{
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 3.125em;
+	background-color: #16a085;
+	z-index: 1;
+}
+#gamefield{
+	position: static;
+	width: 56.25em;
+	height: 31.25em;
+	background-color: #64b0ff;
+	z-index: 3;
+}
+#bg{
+	position: absolute;
+	top: 3.125em;
+	width: 56.25em;
+	height: 31.25em;
+	background-image: url("../img/duckhuntimg/back.png");	
+	z-index: 2;
+}
+#tree{
+	position: absolute;
+	top: 12.5em;
+	left: 12.5em;
+	width: 10.813em;
+	height: 16.25em;
+	background-image: url("../img/duckhuntimg/tree.png");
+	z-index: 0
+}
+#duck{
+	position: absolute;
+	width: 8.125em;
+	height: 6.5em;
+	top: 6.25em;
+	left: -8.125em;
+	z-index: 3;
+	background-image: url("../img/duckhuntimg/duck_right.gif");
+}
+h1, h2{
+	float: left;
+	margin: 0;
+	padding: 0;
+	margin-left: 1.25em;
+	margin-top: 0.625em;
+}
+h2{
+	float: right;
+	left: 50%;
+	margin: 0.938em 1.25em 0 0;
+}
+img{
+	display: inline-block;
+	height: 1.25em;
+	width: 1.25em;
+	margin-top: 0.75em;
+	margin-right: 2px;
+	float: right;
+}
+#again, #start{
+	position: absolute;
+	left : 40%;
+	top: 40%;
+	width: 11.25em;
+	height: 6.25em;
+	background-color: rgba(230, 126, 34,1);
+	z-index: 5;
+}
+#start button{
+	width: 50%;
+	margin: 20% 25%;
+}
+h3{
+	margin: 0.625em auto;
+	text-align: center;
+	font-size: 1.25em;
+	text-transform: uppercase;
+
+}
+button{
+	font-family: "Duck Hunt";
+	text-align: center;
+	color: #fff;
+	font-size: 0.75em;
+	background: rgba(230, 126, 34,1);
+	padding: 5px 10px;
+	border: solid #fff 2px;
+	margin: 1px 50px;
+	cursor: pointer;
+}
